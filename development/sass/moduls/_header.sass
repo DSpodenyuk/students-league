@@ -1,0 +1,110 @@
+.header
+    min-height: 500px
+    background: url(../img/header-bg.jpg) no-repeat
+    position: relative
+    background-position: top center
+    background-size: cover
+    .logo
+        position: relative
+        width: 100%
+        max-width: 466px
+        margin: 0 auto
+        top: 145px
+        img
+            width: 100%
+            height: auto
+            margin-bottom: 10px
+        h1
+            color: #fff
+            font-size: 25px
+            padding-top: 10px
+            text-align: center
+            border-top: 2px solid #fff
+            font-weight: 300
+            span
+                color: $red
+    .black
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: rgba(0,0,0,0.6)
+    .nav-bg
+        height: 0
+        background: rgba(255,255,255,0.9)
+        position: fixed
+        top: 0;
+        left: 0
+        right: 0
+        z-index: 5
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        @include transition(all 0.2s ease-in-out);
+        &.active
+            height: 70px
+    .nav-wrap
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        height: 70px
+        z-index: 10
+        .social
+            margin-top: 21px
+            float: left
+            li
+                float: left
+                display: block
+                margin-left: 15px
+                &:first-child
+                        margin-left: 0
+                a
+                    display: block
+                    border-radius: 50%
+                    &.vk
+                        @include sprite($s-vk)
+                    &.fb
+                        @include sprite($s-fb)
+                    &.me
+                        @include sprite($s-mail)
+        .navbar-collapse
+            float: right
+            .nav
+                margin-top: 10px
+                li
+                    margin-left: 10px
+                    &:first-child
+                        margin-left: 0
+                    a
+                        color: #fff
+                        font-size: 15px
+                        text-transform: uppercase
+                        font-weight: 300
+                        background: none !important
+                        @include transition(all 0.2s ease-in-out);
+                        &.mPS2id-highlight.mPS2id-highlight-last
+                            color: $red !important
+                            cursor: default
+                            &+.line
+                                display: none
+                            
+                    .line
+                        position: absolute
+                        bottom: -10px
+                        height: 0
+                        right: 15px
+                        left: 15px
+                        background: $red
+                        @include transition(all 0.2s ease-in-out);
+                    &:hover
+                        a
+                            color: $red !important
+                        .line
+                            height: 5px
+        &.scrolled
+            position: fixed
+            top: 0
+            .navbar-collapse .nav li a
+                            color: #000
+                
+                    

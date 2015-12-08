@@ -1,0 +1,38 @@
+doctype html
+html
+    include ./components/head.jade
+    body
+        include ./components/header.jade
+        // index content begin
+        #about.container-fluid
+            section.container
+                h2 What <span>is</span> it ?
+                    .line
+                .container
+                    .item.col-md-4
+                        .img-wrap.slu
+                            img(src="img/slu.png")
+                        h3 International <span>S</span>tudents <span>L</span>eague <span>U</span>ltimate
+                        p.
+                            SLU or Students League Ultimate it`s international league ultimate which included different university teams from all of the world.
+                    .item.col-md-4
+                        .img-wrap.community
+                            img(src="img/community.png")
+                        h3 Community
+                        p.
+                            Being the member of student league ultimate, it's a great possibility to make friends with a huge community of positive purposeful and clever sportsmen and businessmen from all around the world!
+                    .item.col-md-4
+                        .img-wrap.team
+                            img(src="img/team.png")
+                        h3 Our Teams
+                        p.
+                            We have more then 30 mixed student ultimate teams!
+        section#universities.container
+            h2 How <span>many</span> of us?
+                .line
+            .universities-list
+            #map
+        section#partners
+        // index content end            
+        include ./components/footer.jade
+        include ./components/scripts.jade
